@@ -1,4 +1,4 @@
-package jichu.reflect;
+package com.study.study_space.jichu.reflect;
 
 public class Test1 {
 

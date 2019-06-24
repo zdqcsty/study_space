@@ -1,7 +1,5 @@
 package test;
 
-import org.apache.commons.io.FileUtils;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;

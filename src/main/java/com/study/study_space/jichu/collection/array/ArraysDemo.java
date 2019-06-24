@@ -1,4 +1,4 @@
-package jichu.array;
+package com.study.study_space.jichu.collection.array;
 
 import java.util.Arrays;
 
