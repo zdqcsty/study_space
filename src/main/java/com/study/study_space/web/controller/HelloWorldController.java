@@ -1,4 +1,4 @@
-package com.study.study_space.controller;
+package com.study.study_space.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
