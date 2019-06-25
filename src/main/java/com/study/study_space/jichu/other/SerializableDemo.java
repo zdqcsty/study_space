@@ -6,6 +6,10 @@ public class SerializableDemo {
 
     public static void main(String[] args) throws Exception {
 
+        /**序列化的好处
+         * 用于将 Java 对象转换为字节数组，便于存储或传输。
+         */
+
         People zeng=new People();
         zeng.setHeight(178);
         zeng.setName("zeng");
@@ -23,6 +27,7 @@ public class SerializableDemo {
 
 class  People  implements  Serializable{
 
+    //序列化ID  一般1L 就可以
     private static final long SerializableId=1L;
 
     String name;
