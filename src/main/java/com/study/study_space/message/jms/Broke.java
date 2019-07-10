@@ -1,4 +1,4 @@
-package message.jms;
+package com.study.study_space.message.jms;
 
 import org.apache.activemq.broker.BrokerService;
 
@@ -14,6 +14,7 @@ public class Broke {
         BrokerService broker = new BrokerService();
         broker.setBrokerName("Nokia Message Service");
         broker.setDataDirectory("./work/activemq");
+        broker.setUseJmx(true);
         broker.addConnector(url);
         broker.start();
 

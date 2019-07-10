@@ -1,4 +1,4 @@
-package message.jms;
+package com.study.study_space.message.jms;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
