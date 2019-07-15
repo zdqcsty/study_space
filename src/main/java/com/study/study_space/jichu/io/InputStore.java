@@ -8,14 +8,7 @@ public class InputStore {
 
     public static void main(String[] args){
 
-//        binaryFileRead("D:\\aaa\\bbb.txt");
-
-        Calendar ca = Calendar.getInstance();
-        ca.add(Calendar.DATE,-1);
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
-        String yestday = format.format(ca.getTime());
-        System.out.println(yestday);
-
+        binaryFileRead("D:\\aaa\\bbb.txt");
 
     }
 
@@ -27,7 +20,6 @@ public class InputStore {
 //            dos.writeUTF("hahah");
 //            dos.writeDouble(3.1);
 //            dos.close();
-
             DataInputStream dis=new DataInputStream(new BufferedInputStream(new FileInputStream(fileName)));
             String s = dis.readUTF();
             System.out.println(s);
