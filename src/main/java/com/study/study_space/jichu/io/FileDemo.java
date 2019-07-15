@@ -1,10 +1,13 @@
-package jichu.io;
+package com.study.study_space.jichu.io;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
+/**
+ * File这个API的使用
+ */
 public class FileDemo {
 
     public static File file;
@@ -14,19 +17,13 @@ public class FileDemo {
         File file=new File("D:\\aaa");
 
         String name = file.getName();
-
         String absolutePath = file.getAbsolutePath();
-
         boolean b = file.canRead();
-
         boolean b1 = file.canWrite();
-
         boolean c = file.isFile();
-
         boolean c1 = file.isDirectory();
 
         listFile("D:\\aaa");
-
     }
 
     public static void listFile(String fileName){

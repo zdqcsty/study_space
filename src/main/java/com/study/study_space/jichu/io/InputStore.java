@@ -1,4 +1,4 @@
-package jichu.io;
+package com.study.study_space.jichu.io;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
