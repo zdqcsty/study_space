@@ -1,4 +1,4 @@
-package jichu.date;
+package com.study.study_space.jichu.date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

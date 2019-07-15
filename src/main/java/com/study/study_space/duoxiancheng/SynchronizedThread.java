@@ -1,4 +1,4 @@
-package duoxiancheng;
+package com.study.study_space.duoxiancheng;
 
 public class SynchronizedThread {
 

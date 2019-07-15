@@ -9,9 +9,13 @@ object Test5 {
 
 //    println(first_data("2019-04-22,2019-04-23"))
 
-    println(format_date1("2019-04-22"))
+    println(format_dayTimeStamp("2019042800"))
   }
 
+  def format_dayTimeStamp(s:String) ={
+    val format = new SimpleDateFormat("yyyyMMddHH");
+    format.parse(s).getTime
+  }
   val first_data  = (str_arr: String) => {
     try{
       var format=new SimpleDateFormat("yyyyMMdd")
