@@ -1,12 +1,11 @@
-package design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.jianzaozhe;
 
 public abstract class Builder {
 
-    public abstract void buildScreen();
-    public abstract void buildCPU();
-    public abstract void buildKeyBoard();
-    public Computer getComputer(){
+    public abstract void buildMouse(String mouse);
+    public abstract void buildCpu(String cpu);
+    public abstract void buildKeyBoard(String keyBoard);
+    public abstract void buildMemory(String memory);
+    public abstract Computer createComputer();
 
-        return new Computer();
-    }
 }

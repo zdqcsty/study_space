@@ -1,22 +1,54 @@
-package design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.jianzaozhe;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Computer {
 
-    List<String> list=new ArrayList<>();
+    private String cpu;
+    private String mouse;
+    private String keyboard;
+    private String memory;
 
-    public void add(String str){
-        list.add(str);
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "cpu='" + cpu + '\'' +
+                ", mouse='" + mouse + '\'' +
+                ", keyboard='" + keyboard + '\'' +
+                ", memory='" + memory + '\'' +
+                '}';
     }
 
-
-    public String toString(){
-
-        return list.toString();
-
+    public String getCpu() {
+        return cpu;
     }
 
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
+    }
 
+    public String getMouse() {
+        return mouse;
+    }
+
+    public void setMouse(String mouse) {
+        this.mouse = mouse;
+    }
+
+    public String getKeyboard() {
+        return keyboard;
+    }
+
+    public void setKeyboard(String keyboard) {
+        this.keyboard = keyboard;
+    }
+
+    public String getMemory() {
+        return memory;
+    }
+
+    public void setMemory(String memory) {
+        this.memory = memory;
+    }
 }

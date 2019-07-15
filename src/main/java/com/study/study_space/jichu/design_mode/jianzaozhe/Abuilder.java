@@ -1,22 +1,30 @@
-package design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.jianzaozhe;
 
 public class Abuilder extends Builder {
 
     Computer computer=new Computer();
     @Override
-    public void buildScreen() {
-
-
-        System.out.println("Screen 好了");
+    public void buildMouse(String mouse) {
+        computer.setMouse(mouse);
     }
 
     @Override
-    public void buildCPU() {
-        System.out.println("CPU 好了");
+    public void buildCpu(String cpu) {
+        computer.setCpu(cpu);
     }
 
     @Override
-    public void buildKeyBoard() {
-        System.out.println("KeyBoard 好了");
+    public void buildKeyBoard(String keyBoard) {
+        computer.setKeyboard(keyBoard);
+    }
+
+    @Override
+    public void buildMemory(String memory) {
+        computer.setMemory(memory);
+    }
+
+    @Override
+    public Computer createComputer() {
+        return computer;
     }
 }

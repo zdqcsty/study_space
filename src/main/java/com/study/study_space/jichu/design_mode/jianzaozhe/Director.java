@@ -1,10 +1,19 @@
-package design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.jianzaozhe;
 
 public class Director {
 
-    public  void  build(Builder builder){
-        builder.buildScreen();
-        builder.buildCPU();
-        builder.buildKeyBoard();
+    private Builder builder;
+
+    public Director(Builder builder) {
+        this.builder=builder;
     }
+
+    public Computer buildComputer(String KeyBoard,String cpu,String memory,String mouse){
+        builder.buildKeyBoard(KeyBoard);
+        builder.buildCpu(cpu);
+        builder.buildMemory(memory);
+        builder.buildMouse(mouse);
+        return builder.createComputer();
+    }
+
 }
