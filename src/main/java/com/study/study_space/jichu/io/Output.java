@@ -11,7 +11,10 @@ public class Output {
 
     }
 
-
+    /**
+     * 使用PrintWriter输出数据
+     * @param fileName
+     */
     public static void printWrite(String fileName){
 
         try {

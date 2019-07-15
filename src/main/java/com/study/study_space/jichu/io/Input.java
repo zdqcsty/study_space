@@ -26,7 +26,12 @@ public class Input {
     }
 
 
-    //常见读取字符文件的形式
+
+    /**
+     * 使用BufferReader读取字符流
+     * @param fileName
+     * @return
+     */
     public static String readFile(String fileName){
 
         try {
@@ -47,8 +52,11 @@ public class Input {
     }
 
 
-
-    //字节形式读取
+    /**
+     * 使用字节形式读取文件
+     * @param fileName
+     * @throws IOException
+     */
     public static void byteRead(String fileName) throws IOException {
 
        DataInputStream dis=new DataInputStream(new ByteArrayInputStream(readFile(fileName).getBytes()));

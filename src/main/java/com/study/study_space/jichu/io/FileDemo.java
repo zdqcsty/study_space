@@ -26,6 +26,10 @@ public class FileDemo {
         listFile("D:\\aaa");
     }
 
+    /**
+     * 遍历文件
+     * @param fileName
+     */
     public static void listFile(String fileName){
 
         file=new File(fileName);
