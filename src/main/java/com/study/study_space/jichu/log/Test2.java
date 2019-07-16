@@ -1,4 +1,4 @@
-package jichu.log;
+package com.study.study_space.jichu.log;
 
 import org.apache.log4j.Logger;
 
