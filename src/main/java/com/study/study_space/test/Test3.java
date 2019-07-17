@@ -1,4 +1,4 @@
-package test;
+package com.study.study_space.test;
 
 import org.apache.commons.io.IOUtils;
 

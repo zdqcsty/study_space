@@ -62,16 +62,17 @@
             <version>2.5</version>
         </dependency>
 
+        <!--ActiveMq-->
         <dependency>
             <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-core</artifactId>
+            <artifactId>activemq-all</artifactId>
             <version>5.7.0</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
 
@@ -81,13 +82,42 @@
             <version>2.1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.7.7</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
-        <plugins>
+     <!--   <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>-->
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                          <!--  <addClasspath>true</addClasspath>-->
+                            <!--指定依赖资源路径前缀-->
+                        <!--    <classpathPrefix>lib/</classpathPrefix>-->
+                            <mainClass>com.study.study_space.bigdata.hadoop.Utils</mainClass>
+                        </manifest>
+                        <!--可以把依赖本地系统的Jar包加入Manifest文件中-->
+                      <!--  <manifestEntries>
+                            <Class-Path>lib/*</Class-Path>
+                        </manifestEntries>-->
+                    </archive>
+                </configuration>
             </plugin>
         </plugins>
     </build>

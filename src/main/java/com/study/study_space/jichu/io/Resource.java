@@ -6,6 +6,7 @@ import org.springframework.core.io.ResourceLoader;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Properties;
 
 public class Resource {
 
@@ -25,5 +26,13 @@ public class Resource {
         String utf8 = IOUtils.toString(Resource.class.getResourceAsStream("/config/test.txt"), "utf8");
         System.out.println(utf8);
 
+
+        /**
+         * 读取properties的方式   以及获取key  value
+         */
+        Properties prop=new Properties();
+        prop.load(Resource.class.getClassLoader().getResourceAsStream("config/test.properties"));
+        String aaa = prop.getProperty("aaa");
+        System.out.println(aaa);
     }
 }

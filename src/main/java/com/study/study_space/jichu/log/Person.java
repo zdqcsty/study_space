@@ -15,7 +15,7 @@ public class Person {
         this.sex = sex;
     }
 
-    //无惨构造函数
+    //无参构造函数
     public Person() {
     }
 

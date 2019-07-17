@@ -1,4 +1,4 @@
-package test;
+package com.study.study_space.test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
