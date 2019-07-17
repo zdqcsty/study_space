@@ -1,11 +1,7 @@
 package com.study.study_space.jichu.io;
 
 import org.apache.commons.io.IOUtils;
-import org.springframework.core.io.DefaultResourceLoader;
-import org.springframework.core.io.ResourceLoader;
-
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 public class Resource {
