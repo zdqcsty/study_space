@@ -46,7 +46,7 @@ public class ExecutorServiceDemo {
 
     static {
         /**
-         *newFixedThreadPool() 工厂方法创建壹個 ExecutorService ，上述代码创建了壹個可以容纳10個线程任务的线程池
+         *newFixedThreadPool(10) 工厂方法创建壹個 ExecutorService ，上述代码创建了壹個可以容纳10個线程任务的线程池
          */
         // ExecutorService executorService = Executors.newFixedThreadPool(10);
 
