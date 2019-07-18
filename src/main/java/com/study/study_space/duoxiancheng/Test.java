@@ -1,5 +1,7 @@
-package duoxiancheng;
+package com.study.study_space.duoxiancheng;
 
+
+import com.study.study_space.duoxiancheng.ExecutorServiceDemo;
 
 import java.util.concurrent.*;
 import java.util.Date;
@@ -17,15 +19,11 @@ public class Test {
         Date date1 = new Date();
 
         int taskSize = 5;
-        // 创建一个线程池
-        ExecutorService pool = Executors.newFixedThreadPool(taskSize);
-        // 创建多个有返回值的任务
+        ExecutorService pool = ExecutorServiceDemo.executorService;
         List<Future> list = new ArrayList<Future>();
         for (int i = 0; i < taskSize; i++) {
             Callable c = new MyCallable(i + " ");
-            // 执行任务并获取Future对象
             Future f = pool.submit(c);
-            // System.out.println(">>>" + f.get().toString());
             list.add(f);
         }
         // 关闭线程池
