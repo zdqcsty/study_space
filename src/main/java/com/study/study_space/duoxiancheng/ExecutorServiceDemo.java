@@ -22,6 +22,17 @@ public class ExecutorServiceDemo {
             }
         });
 
+        Future<?>  future1 = executorService.submit(new Callable<Object>() {
+            @Override
+            public Object call() throws Exception {
+                return "hello world";
+            }
+        });
+
+        //Callable 的返回值可以从方法 submit(Callable) 返回的 Future 对象中获取
+        String result = future1.get().toString();
+        System.out.println(result);
+
         /**
          *  会等待线程计算的完成，在这里会阻塞
          */
@@ -53,5 +64,10 @@ public class ExecutorServiceDemo {
             };
         });
     }
+
+
+
+
+
 
 }
