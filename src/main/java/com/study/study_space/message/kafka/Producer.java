@@ -29,7 +29,7 @@ public class Producer {
 
 
         Properties props = new Properties();
-        props.put("bootstrap.servers", "vm28:6667");
+        props.put("bootstrap.servers", "192.168.6.1:9092");
         props.put("acks", "0");
         props.put("retries", 0);
         props.put("batch.size", 16384);
@@ -38,7 +38,7 @@ public class Producer {
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         //生产者发送消息
-        String topic = "zghtest";
+        String topic = "test";
         org.apache.kafka.clients.producer.Producer<String, String> procuder = new KafkaProducer<String, String>(props);
         String newPathName="";
 
