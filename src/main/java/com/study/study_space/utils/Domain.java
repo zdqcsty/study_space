@@ -1,4 +1,4 @@
-package utils;
+package com.study.study_space.utils;
 
 public class Domain {
 

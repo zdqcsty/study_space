@@ -9,20 +9,33 @@ import java.util.HashMap;
 
 public class Test1 {
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args)  {
 
 
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
-        cal.add(Calendar.DATE, -1);
-        Date time = cal.getTime();
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
-        String date1=format.format(time);
-        System.out.println(date1);
-        cal.add(Calendar.DATE, -1);
-        Date date2 = cal.getTime();
-        String time2=format.format(date2);
-        System.out.println(time2);
+//        StringBuilder sb=new StringBuilder();
+//        sb.append("aaa");
+//        char[] char_arr = "".toCharArray();
+//        for(char ch:char_arr){
+//            if(ch != '\r' && ch != '\n' && ch !='\''){
+//                sb.append(ch);
+//            }
+//        }
+//
+//        System.out.println(sb.toString());
+
+//
+
+
+
+        HashMap map=new HashMap();
+
+
+
+
+//        String aaa="133.95.8.27,GPFDIST_PORT=8000,GPFDIST_MAX_SPEND=5";
+//        System.out.println(aaa);
+
+
 
     }
 
