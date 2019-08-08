@@ -25,7 +25,6 @@ public class Hdfs_Demo {
         writeToHdfs("/user/guanghao/aaa");
     }
 
-
     public static void writeToHdfs(String path) throws IOException {
         FileSystem fs = FileSystem.get(conf);
         Path filePath = new Path(path);
