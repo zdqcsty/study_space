@@ -11,6 +11,7 @@ public class Hdfs_Demo {
 
     public static Configuration conf;
 
+
     static {
         conf = new Configuration();
         conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
