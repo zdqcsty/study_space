@@ -7,6 +7,8 @@ public class aaa {
         ThreadLocal t=new ThreadLocal();
         t.set("aaa");
 
+        System.out.println(123==123);
+
 
     }
 
