@@ -21,11 +21,9 @@ public class Hdfs_Demo {
         conf.addResource(Hdfs_Demo.class.getClassLoader().getResourceAsStream("config/core-site.xml"));
     }
 
-
     public static void main(String[] args) throws IOException {
         writeToHdfs("/user/guanghao/aaa");
     }
-
 
 
     public static void writeToHdfs(String path) throws IOException {
@@ -37,8 +35,5 @@ public class Hdfs_Demo {
         outputStream.close();
         fs.close();
     }
-
-
-
 
 }
