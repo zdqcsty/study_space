@@ -27,6 +27,7 @@ public class Hdfs_Demo {
     }
 
     public static void writeToHdfs(String path) throws IOException {
+
         FileSystem fs = FileSystem.get(conf);
         Path filePath = new Path(path);
         FSDataOutputStream outputStream = fs.create(filePath);
@@ -34,6 +35,7 @@ public class Hdfs_Demo {
         outputStream.flush();
         outputStream.close();
         fs.close();
+
     }
 
 }
