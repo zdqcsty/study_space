@@ -2,7 +2,7 @@ package com.study.study_space.jichu.exception;
 
 import java.io.IOException;
 
-public class Test1 {
+public class Exception_Demo {
 
     public static void main(String[] args){
 
