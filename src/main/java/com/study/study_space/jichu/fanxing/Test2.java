@@ -1,4 +1,4 @@
-package jichu.fanxing;
+package com.study.study_space.jichu.fanxing;
 
 import java.util.ArrayList;
 import java.util.Collection;

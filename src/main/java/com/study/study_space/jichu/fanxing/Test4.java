@@ -1,4 +1,4 @@
-package jichu.fanxing;
+package com.study.study_space.jichu.fanxing;
 
 //泛型中的元祖
 public class Test4<A,B> {
