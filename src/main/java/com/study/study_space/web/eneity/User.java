@@ -1,5 +1,7 @@
 package com.study.study_space.web.eneity;
 
+import org.springframework.stereotype.Component;
+
 public class User {
     private Long userId;
     private String userName;
