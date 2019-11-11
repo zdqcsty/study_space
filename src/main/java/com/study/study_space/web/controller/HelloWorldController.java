@@ -24,8 +24,9 @@ public class HelloWorldController {
     //跳转包括视图和数据
     @RequestMapping("/Hi")
     public ModelAndView sayHello() {
-           ModelAndView modelAndView = new ModelAndView();
-          modelAndView.setViewName("test1");
+          //创建一个模型视图对象
+          ModelAndView modelAndView = new ModelAndView();
+          modelAndView.setViewName("test");
           modelAndView.addObject("key", 12345);
           //System.out.println("test");
           return modelAndView;

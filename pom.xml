@@ -27,16 +27,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -51,6 +42,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.38</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
         <dependency>
@@ -70,12 +66,27 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>2.1.0</version>
+        </dependency>
+
+        <!--log-->
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
         </dependency>
 
         <!--hadoop-->
@@ -92,17 +103,17 @@
             <version>2.7.2</version>
         </dependency>
 
-        <!--ehCache-->
-        <dependency>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-        </dependency>
-
-
 
     </dependencies>
 
     <build>
+     <!--   <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>-->
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -111,15 +122,15 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!--  <addClasspath>true</addClasspath>-->
+                          <!--  <addClasspath>true</addClasspath>-->
                             <!--指定依赖资源路径前缀-->
-                            <!--    <classpathPrefix>lib/</classpathPrefix>-->
+                        <!--    <classpathPrefix>lib/</classpathPrefix>-->
                             <mainClass>com.study.study_space.bigdata.hadoop.Utils</mainClass>
                         </manifest>
                         <!--可以把依赖本地系统的Jar包加入Manifest文件中-->
-                        <!--  <manifestEntries>
-                              <Class-Path>lib/*</Class-Path>
-                          </manifestEntries>-->
+                      <!--  <manifestEntries>
+                            <Class-Path>lib/*</Class-Path>
+                        </manifestEntries>-->
                     </archive>
                 </configuration>
             </plugin>

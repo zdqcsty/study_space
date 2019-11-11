@@ -1,4 +1,4 @@
-package design_mode.celue;
+package com.study.study_space.jichu.design_mode.celue;
 
 public interface Strategy {
 

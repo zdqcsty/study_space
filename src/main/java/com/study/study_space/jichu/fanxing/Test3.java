@@ -1,4 +1,4 @@
-package jichu.fanxing;
+package com.study.study_space.jichu.fanxing;
 
 //类的泛型  在类名后面加<T>
 public class Test3<T> {
