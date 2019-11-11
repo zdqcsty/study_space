@@ -12,6 +12,13 @@ object Test5 {
     println(format_dayTimeStamp("2019042800"))
   }
 
+  def initSession(s:String) ={
+
+    val sparkConf = new SparkConf().setAppName("SparkSessionZipsExample").setMaster("local")
+  }
+
+
+
   def format_dayTimeStamp(s:String) ={
     val format = new SimpleDateFormat("yyyyMMddHH");
     format.parse(s).getTime

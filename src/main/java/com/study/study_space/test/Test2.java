@@ -2,23 +2,27 @@ package com.study.study_space.test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class Test2 {
 
     public static void main(String[] args) throws ParseException {
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHH");
-        Date date = format.parse("2019062712");
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-        cal.add(Calendar.HOUR, -13);
-        date = cal.getTime();
-        String time = format.format(date);
+        List<String> forEachLists = new ArrayList<>();
+        forEachLists.add("a");
+        forEachLists.add("b");
+        forEachLists.add("c");
 
-        System.out.println(time);
-        Long timeStart = Long.valueOf(time);
+
+        String [] strArray = new String[] {"a", "b", "c"};
+        Stream.of(strArray).forEach(s->System.out.println(s));
+
+//        forEachLists.stream().forEach(s-> System.out.println(s));
+
 
     }
 
