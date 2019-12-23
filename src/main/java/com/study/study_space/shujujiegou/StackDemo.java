@@ -1,6 +1,8 @@
-package shujujiegou;
+package com.study.study_space.shujujiegou;
 
-public class Stack {
+import java.util.Stack;
+
+public class StackDemo {
 
     Node head;
     Node current;
@@ -37,7 +39,7 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        Stack stack=new Stack();
+        StackDemo stack=new StackDemo();
 
         stack.push(1);
         stack.push(2);

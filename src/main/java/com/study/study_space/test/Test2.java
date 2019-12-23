@@ -1,32 +1,32 @@
 package com.study.study_space.test;
 
-import io.netty.channel.local.LocalAddress;
 
-import java.io.IOException;
-import java.net.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
+@Configuration
 public class Test2 {
 
-    public static void main(String[] args) throws ParseException, IOException {
+    public static void main(String[] args){
 
-        Map<String,String> ceshi=new HashMap<>();
+        ApplicationContext context = new AnnotationConfigApplicationContext(Test2.class);
+        Test3 test3 = (Test3)context.getBean("testBean");
+        test3.sayHello();
 
-        Map<Integer,String> map=new HashMap<>();
-        map.put(1,"aaa");
-        map.put(2,"bbb");
-        map.put(3,"ccc");
-
-        Iterator<Integer> iterator = map.keySet().iterator();
-        while(iterator.hasNext()){
-
-            for(String aaa:ceshi.keySet()){
-                if (iterator.next().toString().equals(aaa)){
-                    System.out.println("hello world");
-                }
-            }
-        }
     }
+
+
+    public Test2(){
+        System.out.println("hello world");
+    }
+
+
+    @Bean
+    public Test3 testBean() {
+        return new Test3();
+    }
+
 }
