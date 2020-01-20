@@ -1,4 +1,6 @@
-package design_mode.producerConsumer;
+package com.study.study_space.jichu.design_mode.producerConsumer;
+
+import com.study.study_space.jichu.design_mode.producerConsumer.Storage;
 
 public class Consumer implements Runnable{
 

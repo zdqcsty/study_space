@@ -1,4 +1,4 @@
-package design_mode.producerConsumer;
+package com.study.study_space.jichu.design_mode.producerConsumer;
 
 import java.util.ArrayList;
 
