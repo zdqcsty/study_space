@@ -123,12 +123,6 @@
             <version>2.3.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.study</groupId>
-            <artifactId>spark_test</artifactId>
-            <version>1.0</version>
-        </dependency>
-
 
     </dependencies>
     <build>
