@@ -7,7 +7,6 @@ import org.apache.activemq.command.ActiveMQTextMessage;
 import javax.jms.*;
 
 public class Producer {
-
     public static void main(String[] args) throws JMSException, InterruptedException {
 
         //第一个参数是否开启事务 true开启 ,false不开启事务，如果开启记得手动提交
