@@ -25,11 +25,6 @@ public class Jdbc_Hive {
         UserGroupInformation.setConfiguration(configuration);
         UserGroupInformation.loginUserFromKeytab("nokia_sd@BCHKDC", "/opt/beh/metadata/key/super.keytab");
 
-        System.out.println("推送不同的分支aaa");
-        System.out.println("推送不同的分支ccc");
-        System.out.println("推送不同的分支ddd");
-
-
         Connection connection = null;
         ResultSet rs = null;
         PreparedStatement ps = null;
