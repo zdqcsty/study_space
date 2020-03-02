@@ -23,7 +23,7 @@ public class Jdbc_Hive {
         //登录Kerberos账号
         Configuration configuration = new Configuration();
         UserGroupInformation.setConfiguration(configuration);
-        UserGroupInformation.loginUserFromKeytab("nokia_sd@BCHKDC", "/home/spark2/nokia_sd.keytab");
+        UserGroupInformation.loginUserFromKeytab("nokia_sd@BCHKDC", "/opt/beh/metadata/key/super.keytab");
 
         Connection connection = null;
         ResultSet rs = null;
