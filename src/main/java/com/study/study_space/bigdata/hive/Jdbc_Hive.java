@@ -20,6 +20,8 @@ public class Jdbc_Hive {
             System.exit(1);
         }
 
+        System.out.println("测试内容");
+
         //登录Kerberos账号
         Configuration configuration = new Configuration();
         UserGroupInformation.setConfiguration(configuration);
