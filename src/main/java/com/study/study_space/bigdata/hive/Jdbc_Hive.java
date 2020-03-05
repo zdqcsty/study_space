@@ -27,6 +27,7 @@ public class Jdbc_Hive {
 
 
         System.out.println("cherry pick测试");
+        System.out.println("cherry pickaaaaaa测试");
 
         Connection connection = null;
         ResultSet rs = null;
