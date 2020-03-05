@@ -20,14 +20,14 @@ public class Jdbc_Hive {
             System.exit(1);
         }
 
-
-
         //登录Kerberos账号
         Configuration configuration = new Configuration();
         UserGroupInformation.setConfiguration(configuration);
         UserGroupInformation.loginUserFromKeytab("nokia_sd@BCHKDC", "/opt/beh/metadata/key/super.keytab");
 
-        System.out.println("hahah");
+
+        System.out.println("cherry pick测试");
+
         Connection connection = null;
         ResultSet rs = null;
         PreparedStatement ps = null;
