@@ -27,11 +27,6 @@ public class Jdbc_Hive {
         UserGroupInformation.setConfiguration(configuration);
         UserGroupInformation.loginUserFromKeytab("nokia_sd@BCHKDC", "/opt/beh/metadata/key/super.keytab");
 
-
-        System.out.println("cherry pick测试");
-        System.out.println("hahah");
-        System.out.println("cherry pickaaaaaa测试");
-
         Connection connection = null;
         ResultSet rs = null;
         PreparedStatement ps = null;
