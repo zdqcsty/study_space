@@ -65,6 +65,9 @@ public class DateUtil {
     }
 
     public static Date parse(String dateStr, String pattern) throws ParseException {
+
+        System.out.println("demo");
+
         return getSdf(pattern).parse(dateStr);
     }
 }
