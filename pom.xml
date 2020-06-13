@@ -100,20 +100,14 @@
         <!--hadoop-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-common</artifactId>
-            <version>2.7.2</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-log4j12</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.9.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-hdfs</artifactId>
-            <version>2.7.2</version>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.9.1</version>
         </dependency>
 
         <!--ehCache-->
