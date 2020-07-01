@@ -7,7 +7,10 @@ import java.sql.SQLException;
 
 public class PrestoJdbc {
 
+
     private static String CONNECTION_URL = "jdbc:presto://10.130.7.204:16001/dev001/devtest";
+    //这个是prestodb的driverName(在连接池时候使用)
+    private static String DRIVER_NAME = "com.facebook.presto.jdbc.PrestoDriver";
 
     public static void main(String[] args) throws SQLException{
 
