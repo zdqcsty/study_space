@@ -34,6 +34,7 @@ public class Hdfs_Demo {
         outputStream.writeBytes("hahahah");
         outputStream.flush();
         outputStream.close();
+        System.out.println("hahah");
         fs.close();
 
     }
