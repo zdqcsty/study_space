@@ -82,5 +82,17 @@ public class HadoopUtils {
     }
 
 
+    //修改文件名称或者移动目录
+    public static Boolean movePathToPath(String source,String target) {
+        FileSystem fs = getFileSystem();
+        Boolean rename = false;
+        try {
+            rename = fs.rename(new Path(source), new Path(target));
+        } catch (IOException e) {
+            return Boolean.FALSE;
+        }
+        return rename;
+    }
+
 
 }
