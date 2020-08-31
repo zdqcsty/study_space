@@ -94,5 +94,16 @@ public class HadoopUtils {
         return rename;
     }
 
+    //复制移动目录 (底层也是流调用)
+    public static boolean copyPathToPath(String source,String target) {
+        FileSystem fs = getFileSystem();
+        boolean copy = false;
+        try {
+            copy = FileUtil.copy(fs, new Path(source), fs, new Path(target), false, new Configuration());
+        } catch (IOException e) {
+            return false;
+        }
+        return copy;
+    }
 
 }
