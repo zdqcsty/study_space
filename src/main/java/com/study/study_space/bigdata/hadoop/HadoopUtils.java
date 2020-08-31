@@ -60,9 +60,9 @@ public class HadoopUtils {
 
 
     //获取hdfs目录下的文件的大小
-    public static Double getBlockSize(String path) {
+    public static double getBlockSize(String path) {
         FileSystem fs = getFileSystem();
-        Double result=-1.0;
+        double result=-1.0;
         ContentSummary in = null;
         try {
             in = fs.getContentSummary(new Path(path));
@@ -83,13 +83,13 @@ public class HadoopUtils {
 
 
     //修改文件名称或者移动目录
-    public static Boolean movePathToPath(String source,String target) {
+    public static boolean movePathToPath(String source,String target) {
         FileSystem fs = getFileSystem();
-        Boolean rename = false;
+        boolean rename = false;
         try {
             rename = fs.rename(new Path(source), new Path(target));
         } catch (IOException e) {
-            return Boolean.FALSE;
+            return false;
         }
         return rename;
     }
