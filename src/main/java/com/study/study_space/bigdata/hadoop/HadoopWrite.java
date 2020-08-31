@@ -21,7 +21,7 @@ public class HadoopWrite {
 
         //如果包含中文，推荐这种方式
         FSDataOutputStream dos = fs.create(new Path("/user/zgh/demo"));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(dos));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(dos,"utf-8"));
         bw.write("中国");
         bw.close();
         fs.close();
