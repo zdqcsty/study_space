@@ -1,10 +1,7 @@
 package com.study.study_space.bigdata.hadoop;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FSDataInputStream;
-import org.apache.hadoop.fs.FileStatus;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.*;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -60,6 +57,30 @@ public class HadoopUtils {
         }
         return null;
     }
+
+
+    //获取hdfs目录下的文件的大小
+    public static Double getBlockSize(String path) {
+        FileSystem fs = getFileSystem();
+        Double result=-1.0;
+        ContentSummary in = null;
+        try {
+            in = fs.getContentSummary(new Path(path));
+            //得出来的结果时兆M
+            result=Double.valueOf(in.getLength()) / 1024 / 1024;
+        } catch (IOException e) {
+            return result;
+        }finally {
+            try {
+                if (fs != null) {
+                    fs.close();
+                }
+            } catch (IOException e) {
+            }
+        }
+        return result;
+    }
+
 
 
 }
