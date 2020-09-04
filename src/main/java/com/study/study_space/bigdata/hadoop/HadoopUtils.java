@@ -106,4 +106,19 @@ public class HadoopUtils {
         return copy;
     }
 
+    /**
+     * 打印指定目录下文件或者目录的路径
+     * @param filePath
+     */
+    public static void copyPathToPath(String filePath) {
+        FileSystem fs = getFileSystem();
+        FileStatus[] status = null;
+        try {
+            status = fs.listStatus(new Path(filePath));
+            for (FileStatus file : status) {
+                System.out.println(file.getPath());
+            }
+        } catch (IOException e) {
+        }
+    }
 }
