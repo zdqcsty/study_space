@@ -10,6 +10,7 @@ public class jishu {
 
         int[] jishu = jishu(a);
         System.out.println(Arrays.toString(jishu));
+        System.out.println("");
     }
 
 
