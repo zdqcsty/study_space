@@ -7,6 +7,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 
+
+/**
+ *参考网址:https://blog.csdn.net/DF_XIAO/article/details/50601727   上面示例很多
+ *
+ */
+
 public class HadoopUtils {
 
 
@@ -19,7 +25,7 @@ public class HadoopUtils {
         conf.addResource("hebing/core-site.xml");
         conf.addResource("hebing/hdfs-site.xml");
         //这个对与内外网环境很有用 （如果内外网不配置这个将访问将会报错，访问ip报错，设置这个参数是直接访问主机名）
-        conf.set("dfs.client.use.datanode.hostname", "true");
+//        conf.set("dfs.client.use.datanode.hostname", "true");
 
         try {
             fileSystem = FileSystem.get(conf);
