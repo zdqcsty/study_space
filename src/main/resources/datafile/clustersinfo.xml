@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clusterinfos>
+    <clusterinfo>
+        <name>source</name>
+        <hdfsinfo>
+            <hdfsconfpath>./src/main/resources/liangtai/hdfs-site.xml</hdfsconfpath>
+            <hdfsuri>hdfs://behlt001</hdfsuri>>
+            <user>xunlian@LIANGTAI.BONC</user>
+            <krb5confpath>./src/main/resources/liangtai/krb5.conf</krb5confpath>
+            <userkerberos>true</userkerberos>
+            <keytabpath>./src/main/resources/liangtai/xunlian.keytab</keytabpath>
+        </hdfsinfo>
+    </clusterinfo>
+</clusterinfos>
