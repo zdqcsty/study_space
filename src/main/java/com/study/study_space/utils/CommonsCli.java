@@ -11,8 +11,12 @@ public class CommonsCli {
         options.addOption("srcSouce",false,"srcSouce");
         options.addOption("dstSource",false,"dstSource");
         CommandLine line = commandLineParser.parse(options,args);
-        String srcSource = line.getOptionValue("srcSource");
-        String dstSource = line.getOptionValue("dstSource");
+        if (line.hasOption("srcSource")) {
+            String srcSource = line.getOptionValue("srcSource");
+        }
+        if (line.hasOption("dstSource")){
+            String dstSource = line.getOptionValue("dstSource");
+        }
     }
 
 }
