@@ -9,6 +9,13 @@ import java.io.InputStream;
 import java.text.MessageFormat;
 import java.util.List;
 
+/**
+ * JAXB 是java自带的解析xml的工具
+ * 参考样例
+ * http://blog.leanote.com/post/2005km@163.com/java%E4%BD%BF%E7%94%A8jaxb%E8%A7%A3%E6%9E%90xml
+ *
+ */
+
 public class JaxbReadXml {
 
     @SuppressWarnings("unchecked")

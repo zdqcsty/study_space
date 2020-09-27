@@ -22,6 +22,7 @@ public class XmlHdfsInfo {
     }
 
 
+    // @XmlTransient这个注解用来防止出现属性冲突的（具体报错为---类具有两个相同的属性名称）   它和@XmlElement结合起来使用
     @XmlTransient
     public String getHdfsConfPath() {
         return hdfsConfPath;

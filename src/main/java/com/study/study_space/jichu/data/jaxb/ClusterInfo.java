@@ -3,6 +3,7 @@ package com.study.study_space.jichu.data.jaxb;
 import javax.xml.bind.annotation.XmlElement;
 
 public class ClusterInfo {
+
     private String name;
 
     @XmlElement(name = "hdfsinfo")
