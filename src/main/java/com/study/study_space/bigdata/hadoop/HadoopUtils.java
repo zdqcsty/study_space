@@ -25,7 +25,7 @@ public class HadoopUtils {
         conf.addResource("hebing/core-site.xml");
         conf.addResource("hebing/hdfs-site.xml");
         //这个对与内外网环境很有用 （如果内外网不配置这个将访问将会报错，访问ip报错，设置这个参数是直接访问主机名）
-//        conf.set("dfs.client.use.datanode.hostname", "true");
+        conf.set("dfs.client.use.datanode.hostname", "true");
 
         try {
             fileSystem = FileSystem.get(conf);
