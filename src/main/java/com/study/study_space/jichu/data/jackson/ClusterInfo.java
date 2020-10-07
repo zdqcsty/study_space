@@ -1,29 +1,10 @@
 package com.study.study_space.jichu.data.jackson;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 
+@Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ClusterInfo {
     private String name;
-    @JacksonXmlProperty(localName = "hdfsinfo")
-    private XmlHdfsInfo hdfsInfo;
-
-    public ClusterInfo() {
-    }
-    
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public XmlHdfsInfo getHdfsInfo() {
-        return hdfsInfo;
-    }
-
-    public void setHdfsInfo(XmlHdfsInfo hdfsInfo) {
-        this.hdfsInfo = hdfsInfo;
-    }
-
 }
