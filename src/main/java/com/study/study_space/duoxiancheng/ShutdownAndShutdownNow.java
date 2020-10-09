@@ -14,9 +14,10 @@ public class ShutdownAndShutdownNow {
         }
         //这一步的操作是让所有的任务进入等待队列
         Thread.sleep(2000);
-//        executor.shutdown();
+        //shutdown会将正在只能执行的任务和等待队列的任务执行完成，但是不接收新的任务
+        executor.shutdown();
         //shutdownNow会中断所有正在执行的任务，清空等待队列
-        executor.shutdownNow();
+//        executor.shutdownNow();
         System.out.println("hahah");
     }
 
