@@ -1,7 +1,4 @@
-package com.study.study_space.jichu.design_mode.jianzaozhe;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.study.study_space.jichu.design_mode.bulider;
 
 public class Computer {
 

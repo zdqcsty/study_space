@@ -1,8 +1,9 @@
-package com.study.study_space.jichu.design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.bulider;
 
 public class Abuilder extends Builder {
 
-    Computer computer=new Computer();
+    Computer computer = new Computer();
+
     @Override
     public void buildMouse(String mouse) {
         computer.setMouse(mouse);

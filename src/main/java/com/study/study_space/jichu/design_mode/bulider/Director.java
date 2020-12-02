@@ -1,14 +1,14 @@
-package com.study.study_space.jichu.design_mode.jianzaozhe;
+package com.study.study_space.jichu.design_mode.bulider;
 
 public class Director {
 
     private Builder builder;
 
     public Director(Builder builder) {
-        this.builder=builder;
+        this.builder = builder;
     }
 
-    public Computer buildComputer(String KeyBoard,String cpu,String memory,String mouse){
+    public Computer buildComputer(String KeyBoard, String cpu, String memory, String mouse) {
         builder.buildKeyBoard(KeyBoard);
         builder.buildCpu(cpu);
         builder.buildMemory(memory);
