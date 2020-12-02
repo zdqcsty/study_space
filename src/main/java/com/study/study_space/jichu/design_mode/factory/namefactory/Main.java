@@ -1,4 +1,4 @@
-package design_mode.gongchang.gongchang;
+package com.study.study_space.jichu.design_mode.factory.namefactory;
 
 public class Main {
     public static void main(String[] args){
