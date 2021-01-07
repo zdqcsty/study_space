@@ -1,4 +1,4 @@
-package design_mode;
+package com.study.study_space.jichu.design_mode;
 
 public class DanLi {
 
