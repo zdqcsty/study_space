@@ -16,7 +16,7 @@ public class HeartbeatClient implements Runnable {
     public void run() {
         try {
             while (isRunning) {
-                HeartbeatHandler handler = com.example.ceshi.test.heartbeat.RPClient.getRemoteProxyObj(HeartbeatHandler.class, new InetSocketAddress(serverIP, serverPort));
+                HeartbeatHandler handler = RPClient.getRemoteProxyObj(HeartbeatHandler.class, new InetSocketAddress(serverIP, serverPort));
                 long startTime = System.currentTimeMillis();
                 // 是否达到发送心跳的周期时间
                 if (startTime - lastHeartbeat > heartBeatInterval) {
@@ -26,7 +26,7 @@ public class HeartbeatClient implements Runnable {
                     entity.setTime(startTime);
                     entity.setNodeID(nodeID);
                     // 向服务器发送心跳，并返回需要执行的命令
-                    com.example.ceshi.test.heartbeat.Cmder cmds = handler.sendHeartBeat(entity);
+                    Cmder cmds = handler.sendHeartBeat(entity);
                     if (!processCommand(cmds))
                         continue;
                 }
@@ -36,7 +36,7 @@ public class HeartbeatClient implements Runnable {
         }
     }
 
-    private boolean processCommand(com.example.ceshi.test.heartbeat.Cmder cmds) {
+    private boolean processCommand(Cmder cmds) {
         // ...
         return true;
     }

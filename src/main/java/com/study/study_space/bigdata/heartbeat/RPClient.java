@@ -28,7 +28,6 @@ public class RPClient<T> {
                             output.writeUTF(method.getName());
                             output.writeObject(method.getParameterTypes());
                             output.writeObject(args);
-                            System.out.println("---------aaa");
                             // 4.同步阻塞等待服务器返回应答，获取应答后返回
                             input = new ObjectInputStream(socket.getInputStream());
                             return input.readObject();

@@ -10,8 +10,6 @@ public class HeartbeatHandlerImpl implements HeartbeatHandler {
             linstener.registerNode(info.getNodeID(), info);
         }
 
-        System.out.println("LLLLLLLLLL"+info.getNodeID());
-
         // 其他操作
         Cmder cmder = new Cmder();
         cmder.setNodeID(info.getNodeID());

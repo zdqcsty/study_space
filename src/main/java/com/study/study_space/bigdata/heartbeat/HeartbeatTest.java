@@ -8,16 +8,16 @@ public class HeartbeatTest {
             public void run() {
                 try {
                     ServiceCenter serviceServer = ServiceCenter.getInstance();
-                    serviceServer.register(com.example.ceshi.test.heartbeat.HeartbeatHandler.class, com.example.ceshi.test.heartbeat.HeartbeatHandlerImpl.class);
+                    serviceServer.register(HeartbeatHandler.class,HeartbeatHandlerImpl.class);
                     serviceServer.start();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }).start();
-        Thread client1 = new Thread(new com.example.ceshi.test.heartbeat.HeartbeatClient());
+        Thread client1 = new Thread(new HeartbeatClient());
         client1.start();
-        Thread client2 = new Thread(new com.example.ceshi.test.heartbeat.HeartbeatClient());
+        Thread client2 = new Thread(new HeartbeatClient());
         client2.start();
     }
 }
