@@ -1,6 +1,6 @@
 package com.study.study_space.jichu.design_mode.dongtaidaili;
 
-public class Teacher implements com.example.ceshi.test.dongtaidaili.People {
+public class Teacher implements People {
 
     @Override
     public String work(String name) {
