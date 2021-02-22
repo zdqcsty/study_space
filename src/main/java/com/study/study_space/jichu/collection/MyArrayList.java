@@ -1,4 +1,4 @@
-package jichu.collection;
+package com.study.study_space.jichu.collection;
 
 
 import java.util.Iterator;

@@ -74,7 +74,7 @@ public class HttpServer {
         //send http response heade
         socketOut.write(responseHeade.getBytes());
 
-        System.out.println("aaa  ---"+uri);
+        System.out.println("aaa  ---" + uri);
 
         InputStream in = HttpServer.class.getResourceAsStream("root/" + uri);
         //send content
