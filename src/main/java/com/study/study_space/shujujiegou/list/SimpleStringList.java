@@ -3,12 +3,12 @@ package com.study.study_space.shujujiegou.list;
 import java.util.Stack;
 
 //单向链表的实现
-public class SimpleList {
+public class SimpleStringList {
 
     public Node head = null;
 
     public static void main(String[] args) {
-        SimpleList list = new SimpleList();
+        SimpleStringList list = new SimpleStringList();
         list.addNode("aaa");
         list.addNode("bbb");
 //        System.out.println(list.length());
@@ -93,8 +93,6 @@ public class SimpleList {
             System.out.println(stack.pop().data);
         }
     }
-
-
 }
 
 
