@@ -1,5 +1,7 @@
 package com.study.study_space.shujujiegou.list;
 
+import java.util.Stack;
+
 //单向链表的实现
 public class SimpleList {
 
@@ -9,13 +11,16 @@ public class SimpleList {
         SimpleList list = new SimpleList();
         list.addNode("aaa");
         list.addNode("bbb");
-        System.out.println(list.length());
-        list.printList();
+//        System.out.println(list.length());
+//        list.printList();
+/*
 
         Node node = list.reverseListIterative(list.head);
-        list.head=node;
+        list.head = node;
         list.printList();
+*/
 
+        list.printTailToHeadList(list.head);
 
     }
 
@@ -75,6 +80,21 @@ public class SimpleList {
         }
         return prev;
     }
+
+
+    public void printTailToHeadList(Node node) {
+        Stack<Node> stack = new Stack<>();
+        while (node != null) {
+            stack.push(node);
+            node = node.next;
+        }
+        int size = stack.size();
+        for (int i = 0; i < size; i++) {
+            System.out.println(stack.pop().data);
+        }
+    }
+
+
 }
 
 
