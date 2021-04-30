@@ -8,8 +8,8 @@ public class CommonsCli {
 
         CommandLineParser commandLineParser = new BasicParser();
         Options options = new Options();
-        options.addOption("srcSouce", false, "srcSouce");
-        options.addOption("dstSource", false, "dstSource");
+        options.addOption("srcSouce", true, "srcSouce");
+        options.addOption("dstSource", true, "dstSource");
         CommandLine line = commandLineParser.parse(options, args);
         if (line.hasOption("srcSource")) {
             String srcSource = line.getOptionValue("srcSource");
@@ -18,5 +18,4 @@ public class CommonsCli {
             String dstSource = line.getOptionValue("dstSource");
         }
     }
-
 }
