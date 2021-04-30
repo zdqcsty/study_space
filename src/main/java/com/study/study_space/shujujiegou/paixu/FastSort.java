@@ -1,4 +1,4 @@
-package com.study.study_space.paixu;
+package com.study.study_space.shujujiegou.paixu;
 
 import java.util.Arrays;
 
@@ -12,10 +12,10 @@ public class FastSort {
     }
 
 
-    public static void quickSort(int[] arr,int low,int high) {
+    public static void quickSort(int[] arr, int low, int high) {
 
-        if(low >= high) {
-            return ;
+        if (low >= high) {
+            return;
         }
         int i = low;
         int j = high;
@@ -31,11 +31,11 @@ public class FastSort {
             arr[j] = arr[i];
             arr[i] = temp;
         }
-        arr[low]=arr[i];
-        arr[i]=flag;
+        arr[low] = arr[i];
+        arr[i] = flag;
 
-        quickSort(arr,low,j-1);
-        quickSort(arr,j,high);
+        quickSort(arr, low, j - 1);
+        quickSort(arr, j, high);
     }
 
 
