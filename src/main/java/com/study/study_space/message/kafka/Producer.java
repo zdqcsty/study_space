@@ -12,7 +12,7 @@ public class Producer {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         Properties props = new Properties();
-        props.put("bootstrap.servers", "192.168.83.201:9092");
+        props.put("bootstrap.servers", "10.130.7.208:9092");
         props.put("acks", "0");
         props.put("retries", 0);
         props.put("batch.size", 16384);
@@ -20,7 +20,7 @@ public class Producer {
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         //生产者发送消息
-        String topic = "nokia";
+        String topic = "monitor-flink";
         org.apache.kafka.clients.producer.Producer<String, String> procuder = new KafkaProducer<String, String>(props);
         String newPathName = "";
         String date;
@@ -28,7 +28,7 @@ public class Producer {
             Thread.sleep(2000);
             date = new Date().toString().substring(11);
             String line = "这是第" + i + "message 时间是  " + date;
-            procuder.send(new ProducerRecord<String, String>(topic, line));
+            procuder.send(new ProducerRecord<String,String>(topic, line));
             System.out.println(line);
         }
     }
