@@ -5,12 +5,10 @@ import java.util.Collections;
 
 public class List1 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        List<String> list= new ArrayList<>();
-        Collections.addAll(list,"one","two","three","four","five");
-
-
+        List<String> list = new ArrayList<>();
+        Collections.addAll(list, "one", "two", "three", "four", "five");
 
 //        ListIterator<String> stringListIterator = list.listIterator();
 //
@@ -19,7 +17,7 @@ public class List1 {
 //            stringListIterator.remove();
 //        }
 
-        for(String str:list){
+        for (String str : list) {
 
             list.remove(str);
         }
@@ -33,13 +31,8 @@ public class List1 {
             iterator.remove();  //可以调用自己的remove方法
             break;
         }*/
-        
+
 //        System.out.println(list);
-        
-
-
-
-
 
     }
 
