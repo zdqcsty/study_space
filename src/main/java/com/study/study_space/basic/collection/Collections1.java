@@ -24,6 +24,5 @@ public class Collections1 {
 
 //        list1.add("hah");
         System.out.println(list1);
-
     }
 }

@@ -20,7 +20,5 @@ public static void main(String[] args){
     double [] d=new double[5];
     System.out.println(Arrays.toString(s));//系统自动赋予默认值
     System.out.println(Arrays.toString(d));
-
-
   }
 }

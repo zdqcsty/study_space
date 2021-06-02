@@ -7,7 +7,6 @@ import java.util.List;
 public class Test1 {
 
     public static void main(String[] args){
-
         //有个泛型后，容器也可以通过自动包装机制来添加基本类型
         List<Integer>  list1=new ArrayList<>();
            list1.add(1);
@@ -20,6 +19,5 @@ public class Test1 {
         list2.add(9);
         System.out.println(list2);
     }
-
 
 }
